@@ -15,7 +15,7 @@ ENV GOPATH=/opt/src/ \
 ADD https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz /opt/tmp/
 
 
-RUN apt-get update -y && apt-get -y upgrade  && apt-get install -y unzip curl git  && apt upgrade -y &&\
+RUN apt-get update -y && apt-get -y upgrade  && apt-get install -y unzip curl git build-essential && apt upgrade -y &&\
     tar -C /opt/ -xzf /opt/tmp/go${GO_VERSION}.linux-amd64.tar.gz &&\
     chmod +x /opt/go/bin/* &&\
     ln -s /opt/go/bin/* /bin/ &&\

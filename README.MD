@@ -73,7 +73,6 @@ services:
         condition: on-failure
     environment:
       - TZ=America/New_York
-      - PASSWORD=ChangMEbYNRnXhfJgpqvkeMHCWtjdE49 #optional
     networks:
       - net
   caddy:

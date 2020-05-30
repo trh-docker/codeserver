@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y unzip curl git &&\
 ENV PATH /opt/dartlang/dart-sdk/bin:$PATH
 
 # Define working directory.
-WORKDIR /home/root
+WORKDIR /home/coder
 
 # Define default command.
 #CMD ["bash"]

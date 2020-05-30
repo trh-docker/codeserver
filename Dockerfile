@@ -1,8 +1,7 @@
 FROM quay.io/spivegin/gitonly:latest AS git
 
 FROM quay.io/spivegin/tlmbasedebian
-RUN ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa &&\
-    git config --global user.name "quadtone" &&\
+RUN git config --global user.name "quadtone" &&\
     git config --global user.email "quadtone@txtsme.com"
 
 COPY --from=git /root/.ssh /root/.ssh

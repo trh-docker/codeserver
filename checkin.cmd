@@ -1,3 +1,3 @@
 git add -A
-git commit -m "added sell laucher and rm bootstrap plugin"
+git commit -m "replaced base image with tlm"
 git push

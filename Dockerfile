@@ -25,7 +25,7 @@ RUN apt-get update -y && apt-get -y upgrade  && apt-get install -y unzip curl gi
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 RUN curl -fOL https://github.com/cdr/code-server/releases/download/v3.4.0/code-server_3.4.0_amd64.deb &&\
-    sudo dpkg -i code-server_3.4.0_amd64.deb &&\
+    dpkg -i code-server_3.4.0_amd64.deb &&\
     rm code-server_3.4.0_amd64.deb
 
 # Install Dart.

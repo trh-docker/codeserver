@@ -42,7 +42,7 @@ RUN code-server --install-extension dart-code.dart-code &&\
     code-server --install-extension ms-vscode.go &&\
     code-server --install-extension rstuven.iferrblocks &&\
     code-server --install-extension thekalinga.bootstrap4-vscode &&\
-    code-server --install-extension smlombardi.darcula-extended &&\
+    code-server --install-extension rokoroku.vscode-theme-darcula &&\
     code-server --install-extension isudox.vscode-jetbrains-keybindings
 # Define default command.
 CMD ["code-server", "--auth", "none", "--bind-addr", "0.0.0.0:8080", "--disable-telemetry"]

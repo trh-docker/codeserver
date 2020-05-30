@@ -1,3 +1,3 @@
 git add -A
-git commit -m "replaced base image with tlm"
+git commit -m "changed working dir"
 git push

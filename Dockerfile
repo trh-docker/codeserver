@@ -45,7 +45,7 @@ RUN apt-get update && apt-get install -y unzip curl git &&\
 ENV PATH /opt/dartlang/dart-sdk/bin:$PATH
 
 # Define working directory.
-WORKDIR /home/coder
+WORKDIR /root/coder
 RUN code-server --install-extension dart-code.dart-code &&\
     code-server --install-extension ms-vscode.go &&\
     code-server --install-extension rstuven.iferrblocks &&\
